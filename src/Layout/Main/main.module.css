@@ -1,4 +1,4 @@
-.main {
+.block_main {
     display: flex;
     margin-top: 20.55px;
     margin-left: 276px;
@@ -8,29 +8,24 @@
     border: 1px solid;
 }
 
-.block_left {
+.block_filters {
     width: 272px;
     height: 503px;
-    border-radius: 10px;
-    border: 1px solid;
 }
 
-.block_right {
+.block_info {
     margin-left: 50px;
     width: 727px;
     height: 700px;
     border-radius: 10px;
-    border: 1px solid;
 }
 
-.block_right__header {
+.block_info__navigation {
     width: 727px;
     height: 55px;
-    border-radius: 10px;
-    border: 1px solid;
 }
 
-.block_right__content {
+.block_info__tickets {
     margin-top: 29px;
     width: 727px;
     height: 616px;

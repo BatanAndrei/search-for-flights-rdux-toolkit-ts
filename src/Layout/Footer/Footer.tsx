@@ -1,8 +1,10 @@
-import style from './footer.module.css'
+import style from './footer.module.css';
+import ButtonLoader from './ButtonLoader/ButtonLoader';
+
 function Footer() {
     return (
         <footer className={style.footer}>
-            <button className={style.button}>Загрузить еще билеты</button>
+            <ButtonLoader />
         </footer>
     )
 }
