@@ -1,7 +1,7 @@
 import Layout from './Layout/Layout';
-import Header from './Header/Header';
-import Main from './Main/Main';
-import Footer from './Footer/Footer';
+import Header from './Layout/Header/Header';
+import Main from './Layout/Main/Main';
+import Footer from './Layout/Footer/Footer';
 import { Provider } from 'react-redux';
 
 
