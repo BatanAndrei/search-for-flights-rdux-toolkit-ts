@@ -1,0 +1,18 @@
+.footer {
+    margin-top: 74px;
+    margin-left: 598px;
+    width: 727px;
+    height: 62px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.button {
+    width: 727px;
+    height: 62px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #F7F9F7;
+    cursor: pointer;
+    background-color: #4E148C;
+}

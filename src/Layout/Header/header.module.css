@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    margin-top: 84px;
+    margin-left: 276px;
+    width: 1049px;
+    height: 80.45px;
+}
+
+.text_header {
+    margin-top: 26px;
+    margin-left: 34px;
+    color: #4E148C;
+    font-weight: 700;
+    font-size: 24px;
+}

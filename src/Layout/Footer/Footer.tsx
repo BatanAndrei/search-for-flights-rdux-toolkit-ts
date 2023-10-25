@@ -1,6 +1,8 @@
+import style from './footer.module.css'
 function Footer() {
     return (
-        <footer>
+        <footer className={style.footer}>
+            <button className={style.button}>Загрузить еще билеты</button>
         </footer>
     )
 }

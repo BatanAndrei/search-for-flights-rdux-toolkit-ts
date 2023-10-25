@@ -1,6 +1,13 @@
+import style from './header.module.css';
+import SvgAircraft from '../Svg/svgAircraft';
+
 function Header() {
     return (
-        <header>
+        <header className={style.header}>
+            <div>
+                <SvgAircraft />
+            </div>
+            <h1 className={style.text_header}>Поиск авиабилетов</h1>
         </header>
     )
 }

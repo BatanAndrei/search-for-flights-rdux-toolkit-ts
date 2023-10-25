@@ -1,0 +1,39 @@
+.main {
+    display: flex;
+    margin-top: 20.55px;
+    margin-left: 276px;
+    width: 1049px;
+    height: 700px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.block_left {
+    width: 272px;
+    height: 503px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.block_right {
+    margin-left: 50px;
+    width: 727px;
+    height: 700px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.block_right__header {
+    width: 727px;
+    height: 55px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.block_right__content {
+    margin-top: 29px;
+    width: 727px;
+    height: 616px;
+    border-radius: 10px;
+    border: 1px solid;
+}
