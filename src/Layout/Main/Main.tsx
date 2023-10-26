@@ -1,5 +1,5 @@
 import style from './main.module.css';
-import ButtonNavigation from './ButtonNavigation/ButtonNavigation';
+import ButtonsNavigation from './ButtonsNavigation/ButtonsNavigation';
 import BlockFilterTransfer from './BlockFilterTransfer/BlockFilterTransfer';
 import BlockFilterCompanies from './BlockFilterCompanies/BlockFilterCompanies';
 
@@ -12,7 +12,7 @@ function Main() {
             </div>
             <div className={style.block_info}>
                 <div className={style.block_info__navigation}>
-                    <ButtonNavigation />
+                    <ButtonsNavigation />
                 </div>
                 <div className={style.block_info__tickets}>
 

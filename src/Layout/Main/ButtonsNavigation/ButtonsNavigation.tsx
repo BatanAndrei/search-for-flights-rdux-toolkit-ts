@@ -1,6 +1,6 @@
-import style from './buttonNavigation.module.css';
+import style from './buttonsNavigation.module.css';
 
-function ButtonNavigation() {
+function ButtonsNavigation() {
     return (
         <>
             <button className={style.button_cheap}>Самый дешевый</button>
@@ -10,4 +10,4 @@ function ButtonNavigation() {
     )
 }
 
-export default ButtonNavigation;
+export default ButtonsNavigation;
