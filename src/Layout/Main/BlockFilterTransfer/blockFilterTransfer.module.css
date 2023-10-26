@@ -45,11 +45,11 @@
 }
 .fake::before{
     position: relative;
-    top: -5px;
+    top: -6px;
     content:"\2714";
     opacity: 0;
     transition: .2s;
-    color:#4E148C;
+    color: purple;
     cursor: pointer;
 }
 
