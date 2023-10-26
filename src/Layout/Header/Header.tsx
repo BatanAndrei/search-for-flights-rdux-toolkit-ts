@@ -1,5 +1,5 @@
 import style from './header.module.css';
-import SvgAircraft from '../Svg/svgAircraft';
+import SvgAircraft from '../Svg/SvgAircraft';
 
 function Header() {
     return (

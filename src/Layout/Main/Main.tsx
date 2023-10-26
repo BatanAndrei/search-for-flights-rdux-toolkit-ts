@@ -17,6 +17,8 @@ function Main() {
                 </div>
                 <div className={style.block_info__tickets}>
                     <TicketsInfo />
+                    <TicketsInfo />
+                    <TicketsInfo />
                 </div>
             </div>
         </main>

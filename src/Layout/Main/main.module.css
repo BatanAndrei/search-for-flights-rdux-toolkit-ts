@@ -26,6 +26,9 @@
 }
 
 .block_info__tickets {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin-top: 29px;
     width: 727px;
     height: 616px;
