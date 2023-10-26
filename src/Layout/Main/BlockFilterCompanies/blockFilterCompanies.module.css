@@ -50,6 +50,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
+    cursor: pointer;
   }
 
   .custom_radio > input:checked + span::before {
