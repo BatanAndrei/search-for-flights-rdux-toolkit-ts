@@ -1,10 +1,10 @@
 import style from './footer.module.css';
-import ButtonLoader from './ButtonLoader/ButtonLoader';
+import ButtonDownload from './ButtonDownload/ButtonDownload';
 
 function Footer() {
     return (
         <footer className={style.footer}>
-            <ButtonLoader />
+            <ButtonDownload />
         </footer>
     )
 }

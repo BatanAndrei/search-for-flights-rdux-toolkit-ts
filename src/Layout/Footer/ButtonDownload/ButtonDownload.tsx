@@ -1,9 +1,9 @@
-import style from './buttonLoader.module.css';
+import style from './buttonDownload.module.css';
 
-function ButtonLoader() {
+function ButtonDownload() {
     return (
         <button className={style.button}>Загрузить еще билеты</button>
     )
 }
 
-export default ButtonLoader;
+export default ButtonDownload;
