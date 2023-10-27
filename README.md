@@ -35,7 +35,7 @@ If you are developing a production application, we recommend updating the config
    info.json;
 
 3) запуск и просмотр содержимого сервера на http://localhost:3000:
-   json-server info.json;   
+   json-server info.json; (http://localhost:3000/ + название данных - добавить в URL после запуска)  
 
 4) запрос к данным осуществляем по URL/ + название данных:
    например - http://localhost:3000/users   
