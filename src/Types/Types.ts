@@ -4,10 +4,6 @@ export type TchildrenProps = {
     children: ReactNode;
 }
 
-export interface TicketTime {
-    startTime: string;
-    endTime: string;
-}
 
 export interface Ticket {
     id: number;
@@ -15,9 +11,10 @@ export interface Ticket {
     to: string;
     company: string;
     price: number;
-    currency: 'RUB';
-    time: TicketTime;
+    currency: string;
+    startTime: string;
+    endTime: string;
     duration: number;
     date: string;
-    connectionAmount: number | null;
+    transfers: number | null;
 }
