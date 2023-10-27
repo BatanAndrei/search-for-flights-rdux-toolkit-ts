@@ -18,3 +18,8 @@ export interface Ticket {
     date: string;
     transfers: number | null;
 }
+
+
+export interface Tpropse {
+    icon: string
+}

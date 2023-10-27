@@ -6,10 +6,10 @@
             "company": "Pobeda",
             "price": 6150,
             "currency": "P",
-            "startTime": "",
-            "endTime": "",
-            "duration": "2ч 00мин",
-            "date": "",
+            "startTime": "14:00",
+            "endTime": "16:00",
+            "duration": 946684800000,
+            "date": "30.10.2023",
             "transfers": 0
         }, {
             "id": 2,
@@ -18,10 +18,10 @@
             "company": "Pobeda",
             "price": 12680,
             "currency": "P",
-            "startTime": "",
-            "endTime": "",
-            "duration": "4ч 30мин",
-            "date": "",
+            "startTime": "12:00",
+            "endTime": "14:30",
+            "duration": 946693800000,
+            "date": "30.10.2023",
             "transfers": 1
         }, {
             "id": 3,
@@ -30,10 +30,10 @@
             "company": "Pobeda",
             "price": 23995,
             "currency": "P",
-            "startTime": "",
-            "endTime": "",
-            "duration": "8ч 40мин",
-            "date": "",
+            "startTime": "07:00",
+            "endTime": "15:40",
+            "duration": 946708800000,
+            "date": "30.10.2023",
             "transfers": 2
         }, {
             "id": 4,
@@ -42,10 +42,10 @@
             "company": "Pobeda",
             "price": 33485,
             "currency": "P",
-            "startTime": "",
-            "endTime": "",
-            "duration": "10ч 30мин",
-            "date": "",
+            "startTime": "03:00",
+            "endTime": "13:30",
+            "duration": 946715400000,
+            "date": "30.10.2023",
             "transfers": 3
         }, {
             "id": 5,
@@ -54,10 +54,10 @@
             "company": "Redwings",
             "price": 6547,
             "currency": "P",
-            "startTime": "",
-            "endTime": "",
-            "duration": "2ч 00мин",
-            "date": "",
+            "startTime": "8:00",
+            "endTime": "10:00",
+            "duration": 946684800000,
+            "date": "30.10.2023",
             "transfers": 0
         }, {
             "id": 6,
@@ -66,10 +66,10 @@
             "company": "Redwings",
             "price": 12710,
             "currency": "P",
-            "startTime": "",
-            "endTime": "",
-            "duration": "4ч 20мин",
-            "date": "",
+            "startTime": "01:00",
+            "endTime": "5:20",
+            "duration": 946693200000,
+            "date": "30.10.2023",
             "transfers": 1
         }, {
             "id": 7,
@@ -78,10 +78,10 @@
             "company": "Redwings",
             "price": 24050,
             "currency": "P",
-            "startTime": "",
-            "endTime": "",
-            "duration": "8ч 30мин",
-            "date": "",
+            "startTime": "19:00",
+            "endTime": "03:30",
+            "duration": 946708200000,
+            "date": "30.10.2023",
             "transfers": 2
         }, {
             "id": 8,
@@ -90,10 +90,10 @@
             "company": "Redwings",
             "price": 33567,
             "currency": "P",
-            "startTime": "",
-            "endTime": "",
-            "duration": "10ч 20мин",
-            "date": "",
+            "startTime": "00:00",
+            "endTime": "10:20",
+            "duration": 946714800000,
+            "date": "30.10.2023",
             "transfers": 3
         }, {
             "id": 9,
@@ -102,10 +102,10 @@
             "company": "Ssevenair",
             "price": 6320,
             "currency": "P",
-            "startTime": "",
-            "endTime": "",
-            "duration": "2ч 00мин",
-            "date": "",
+            "startTime": "16:00",
+            "endTime": "18:00",
+            "duration": 946684800000,
+            "date": "30.10.2023",
             "transfers": 0
         }, {
             "id": 10,
@@ -114,10 +114,10 @@
             "company": "Ssevenair",
             "price": 12690,
             "currency": "P",
-            "startTime": "",
-            "endTime": "",
-            "duration": "4ч 30мин",
-            "date": "",
+            "startTime": "06:00",
+            "endTime": "10:30",
+            "duration": 946693800000,
+            "date": "30.10.2023",
             "transfers": 1
         }, {
             "id": 11,
@@ -126,10 +126,10 @@
             "company": "Ssevenair",
             "price": 24010,
             "currency": "P",
-            "startTime": "",
-            "endTime": "",
-            "duration": "8ч 50мин",
-            "date": "",
+            "startTime": "22:00",
+            "endTime": "06:50",
+            "duration": 946709400000,
+            "date": "30.10.2023",
             "transfers": 2
         }, {
             "id": 12,
@@ -138,10 +138,10 @@
             "company": "Ssevenair",
             "price": 33510,
             "currency": "P",
-            "startTime": "",
-            "endTime": "",
-            "duration": "10ч 10мин",
-            "date": "",
+            "startTime": "15:00",
+            "endTime": "01:10",
+            "duration": 946714200000,
+            "date": "30.10.2023",
             "transfers": 3
         }]
         } 

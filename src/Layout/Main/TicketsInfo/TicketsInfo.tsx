@@ -1,14 +1,15 @@
 import style from './ticketsInfo.module.css';
-//import SvgPobeda from '../../Svg/SvgPobeda';
+import SvgPobeda from '../../Svg/SvgPobeda';
 //import SvgSsevenAir from '../../Svg/SvgSsevenAir'; 
-import SvgRedWings from '../../Svg/SvgRedWings';
+//import SvgRedWings from '../../Svg/SvgRedWings';
+//import IconCompany from '../../IconCompany/IconCompany';
 
 function TicketsInfo() {
     return (
         <div className={style.ticket}>
             <div className={style.ticketInfoTop}>
                 <div className={style.ticketInfoPrice}>25 000 P</div>
-                <div className={style.ticketInfoCompany}><SvgRedWings /></div>
+                <div className={style.ticketInfoCompany}><SvgPobeda  /></div>
             </div>
             <div className={style.ticketInfoBottom}>
                 <div className={style.ticketInfoTime}>
