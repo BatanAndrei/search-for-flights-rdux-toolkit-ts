@@ -25,3 +25,18 @@ If you are developing a production application, we recommend updating the config
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+В проекте применён фэйковый сервер json-
+
+1) установка:
+   npm install -g json-server;
+
+2) создание файла и наполнение его:
+   info.json;
+
+3) запуск и просмотр содержимого сервера на http://localhost:3000:
+   json-server info.json;   
+
+4) запрос к данным осуществляем по URL/ + название данных:
+   например - http://localhost:3000/users   
+
