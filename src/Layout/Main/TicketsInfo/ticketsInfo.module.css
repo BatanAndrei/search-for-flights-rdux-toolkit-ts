@@ -20,7 +20,6 @@
     font-weight: 700;
     font-size: 32px;
     color: #4E148C;
-    border: 1px solid;
 }
 
 .ticketInfoCompany {
@@ -28,7 +27,6 @@
     max-width: 183px;
     min-width: 143px;
     height: 51px;
-    border: 1px solid;
 }
 
 .ticketInfoBottom {
@@ -36,28 +34,24 @@
     align-items: center;
     width: 727px;
     height: 87px;
-   /*  border-bottom: 1px solid; */
 }
 
 .ticketInfoTime {
     margin-left: 39px;
     width: 120px;
     height: 48px;
-    border: 1px solid;
 }
 
 .ticketInfoDurationFlight {
     margin-left: 145px;
     width: 120px;
     height: 48px;
-    border: 1px solid;
 }
 
 .ticketInfoTransfers {
     margin-left: 110px;
     width: 120px;
     height: 48px;
-    border: 1px solid;
 }
 
 .infoTextTitle {
