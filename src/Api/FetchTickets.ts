@@ -4,7 +4,7 @@ import { Ticket, FetchTicketsError } from '../Types/Types';
 export const fetchTickets = createAsyncThunk<Ticket[], number, { rejectValue: FetchTicketsError }>(
     "tickets/getTickets", 
     async (limit: number, thunkApi) => {
-      const response = await fetch(`https://jsonplaceholder.typicode.com/todos`);// //http://localhost:3000/tickets?_limit=${limit}
+      const response = await fetch(`https://jsonplaceholder.typicode.com/todos?limit=${limit}`);// //http://localhost:3000/tickets?_limit=${limit}
   
       const data: Ticket[] = await response.json();
 

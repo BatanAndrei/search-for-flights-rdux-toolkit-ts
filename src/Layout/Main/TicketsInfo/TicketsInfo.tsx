@@ -13,7 +13,7 @@ function TicketsInfo() {
 
         const status = useTypedSelector(selectStatus);
 
-        const handleClick = () => dispatch(fetchTickets(1));
+        const handleClick = () => dispatch(fetchTickets(5));
 
     return (
         <div className={style.ticket}>
