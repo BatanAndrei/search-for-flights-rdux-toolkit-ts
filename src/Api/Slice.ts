@@ -11,7 +11,7 @@ import { fetchTickets } from './FetchTickets';
   };
 
   export const selectStatus = (state: RootState) =>
-  state.tickets.status;
+  state.ticketsReducer.status;
 
   export const ticketsSlice = createSlice({
     name: "tickets",
