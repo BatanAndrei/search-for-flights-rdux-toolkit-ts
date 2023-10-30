@@ -4,7 +4,6 @@ export type TchildrenProps = {
     children: ReactNode;
 }
 
-
 export interface Ticket {
     id: number;
     from: string;
@@ -19,7 +18,16 @@ export interface Ticket {
     transfers: number | null;
 }
 
-
 export interface Tpropse {
     icon: string
 }
+
+export type FetchTicketsError = {
+    message: string;
+  };
+
+  export type TikcetsState = {
+    status: "loading" | "idle";
+    error: string | null;
+    list: Ticket[];
+  };

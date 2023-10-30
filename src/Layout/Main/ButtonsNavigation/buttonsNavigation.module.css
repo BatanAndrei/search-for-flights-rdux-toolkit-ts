@@ -1,32 +1,28 @@
-.button_cheap {
-    width: 243px;
-    height: 55px;
-    font-weight: 700;
-    font-size: 16px;
-    color: #4E148C;
-    border-radius: 10px 0px 0px 10px;
-    border: 1px solid #4E148C;
-    background-color: #E8EBF2;
-}
-
-.button_fast {
+.button {
     width: 242px;
     height: 55px;
     font-weight: 700;
     font-size: 16px;
     color: #4E148C;
-    border-radius: 0px;
     border: 1px solid #4E148C;
     background-color: #E8EBF2;
 }
 
-.button_optimal {
-    width: 242px;
-    height: 55px;
-    font-weight: 700;
-    font-size: 16px;
-    color: #4E148C;
+.optimal {
     border-radius: 0px 10px 10px 0px;
-    border: 1px solid #4E148C;
-    background-color: #E8EBF2;
 }
+
+.fast {
+    border-radius: 0px;
+} 
+
+.cheap {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.active {
+    color: red;
+}
+/* .button_pressed {
+
+} */
