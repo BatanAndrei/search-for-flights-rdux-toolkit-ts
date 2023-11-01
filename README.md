@@ -26,17 +26,8 @@ If you are developing a production application, we recommend updating the config
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
-В проекте применён фэйковый сервер json-
-
-1) установка:
-   npm install -g json-server;
-
-2) создание файла и наполнение его:
-   info.json;
-
-3) запуск и просмотр содержимого сервера на http://localhost:3000:
-   json-server info.json; (http://localhost:3000/ + название данных - добавить в URL после запуска)  
-
-4) запрос к данным осуществляем по URL/ + название данных:
-   например - http://localhost:3000/users   
+-В проекте использован фэйковый API => server-json,
+-Репозиторий на server-json => https://github.com/BatanAndrei/json-server-for-search-aviatickets.git => читай README
+  
+ 
 
