@@ -1,10 +1,10 @@
 import { ReactNode } from "react";
 
-export type TchildrenProps = {
+export type TchildrenProps = {  
     children: ReactNode;
 }
 
-export interface Iticket {
+export interface Iticket { // типы данных с серверв
     id: number;
     from: string;
     to: string;
@@ -22,12 +22,12 @@ export type Tpropse = {
     icon: string
 }
 
-export type TfetchTicketsError = {
+export type TfetchTicketsError = {  // тип описывает структуру объекта ошибки запроса к серверу
     message: string;
   };
 
-  export type TtikcetsState = {
-    status: "loading" | "idle";
-    error: string | null;
+  export type TtikcetsState = { // типы для обработки запроса статусов к серверу
     list: Iticket[];
+    error: string | null;
+    status: "loading" | "idle";
   };
