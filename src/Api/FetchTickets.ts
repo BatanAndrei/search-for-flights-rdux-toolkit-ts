@@ -1,12 +1,12 @@
 import { createAsyncThunk } from '@reduxjs/toolkit'; 
-import { Ticket, FetchTicketsError } from '../Types/Types';
+import { Iticket, TfetchTicketsError } from '../Types/Types';
 
-export const fetchTickets = createAsyncThunk<Ticket[], number, { rejectValue: FetchTicketsError }>(
+export const fetchTickets = createAsyncThunk<Iticket[], number, { rejectValue: TfetchTicketsError }>(
     "tickets/getTickets", 
     async (limit: number, thunkApi) => {
       const response = await fetch(`http://localhost:3000/tickets?_limit=${limit}`);
   
-      const data: Ticket[] = await response.json();
+      const data: Iticket[] = await response.json();
       console.log(data)
 
       if (response.status !== 200) {

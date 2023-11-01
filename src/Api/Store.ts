@@ -10,11 +10,11 @@ export const store = configureStore({
 })
 
 
-//выведение типов из хранилища RootState и RootDispatch, дает возможность не описывать типы редукторов 
-export type RootState = ReturnType<typeof store.getState>; 
-export type RootDispatch = typeof store.dispatch;
+//выведение типов из хранилища RootState и RootDispatch 
+export type RootState = ReturnType<typeof store.getState>; //дает возможность не описывать типы редукторов
+export type AppDispatch = typeof store.dispatch; //включает типы из thunk middleware
 
 //useAppSelector и useAppDispatch используются во всём проекте TS в место useSelector и useDispatch
 export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
-export const useAppDispatch = () => useDispatch<RootDispatch>();
+export const useAppDispatch = () => useDispatch<AppDispatch>();
 

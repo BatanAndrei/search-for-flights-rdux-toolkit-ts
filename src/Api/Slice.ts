@@ -1,10 +1,10 @@
-import {TikcetsState } from '../Types/Types';
+import {TtikcetsState } from '../Types/Types';
 import { RootState } from './Store';
 import { createSlice } from '@reduxjs/toolkit';
 import { fetchTickets } from './FetchTickets';
     
 
-  const initialState: TikcetsState = {
+  const initialState: TtikcetsState = {
     list: [],
     error: null,
     status: "idle",
