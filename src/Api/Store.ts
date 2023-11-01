@@ -9,7 +9,6 @@ export const store = configureStore({
     }
 })
 
-
 //выведение типов из хранилища RootState и RootDispatch 
 export type RootState = ReturnType<typeof store.getState>; //дает возможность не описывать типы редукторов
 export type AppDispatch = typeof store.dispatch; //включает типы из thunk middleware

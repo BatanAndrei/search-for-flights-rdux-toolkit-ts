@@ -10,7 +10,7 @@ import{ RootState } from '../Api/Store';
     status: "idle",
   };
 
-
+  
   export const ticketsSlice = createSlice({
     name: "tickets",
     initialState,
