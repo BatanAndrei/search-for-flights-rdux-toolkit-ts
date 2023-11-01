@@ -5,15 +5,16 @@ import { ticketsSlice } from './Slice';
 
 export const store = configureStore({
     reducer: {
-        ticketsReducer: ticketsSlice.reducer
+        ticketsExtraReducer: ticketsSlice.reducer
     }
 })
 
-export type RootState = ReturnType<typeof store.getState>;
 
-export const useTypedSelector: TypedUseSelectorHook<RootState> = useSelector;
-
+//выведение типов из хранилища RootState и RootDispatch, дает возможность не описывать типы редукторов 
+export type RootState = ReturnType<typeof store.getState>; 
 export type RootDispatch = typeof store.dispatch;
 
-    export const useAppDispatch = () => useDispatch<RootDispatch>();
+//useAppSelector и useAppDispatch используются во всём проекте TS в место useSelector и useDispatch
+export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
+export const useAppDispatch = () => useDispatch<RootDispatch>();
 

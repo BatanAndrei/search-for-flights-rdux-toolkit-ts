@@ -1,6 +1,6 @@
 import style from './ticketsInfo.module.css';
 import SvgPobeda from '../../Svg/SvgPobeda';
-import { useTypedSelector, useAppDispatch } from "../../../Api/Store";
+import { useAppSelector, useAppDispatch } from "../../../Api/Store";
 import { fetchTickets } from '../../../Api/FetchTickets';
 import { selectStatus } from '../../../Api/Slice';
 //import SvgSsevenAir from '../../Svg/SvgSsevenAir'; 
@@ -11,7 +11,7 @@ function TicketsInfo() {
     
         const dispatch = useAppDispatch();
 
-        const status = useTypedSelector(selectStatus);
+        const status = useAppSelector(selectStatus);
 
         const handleClick = () => dispatch(fetchTickets(5));
 
@@ -40,7 +40,6 @@ function TicketsInfo() {
                     ? "Loading tickets..." 
                     : "Load tickets"}
             </button>
-            <p>{status}</p>
         </div>
     )
 }
