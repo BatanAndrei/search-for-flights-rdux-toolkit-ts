@@ -18,11 +18,11 @@ export interface Iticket { // типы данных с серверв
     transfers: number;
 }
 
-export interface Tcompany {
+export type Tcompany = { // тип пропса в компоненте GlobalSvg
     company: string;
 }
 
-export interface TpropseTickets {
+export interface IpropseTickets { // типы пропсов
     id: number;
     from: string;
     to: string;

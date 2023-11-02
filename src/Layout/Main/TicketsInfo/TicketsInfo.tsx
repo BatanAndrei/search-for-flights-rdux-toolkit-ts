@@ -1,9 +1,9 @@
 import style from './ticketsInfo.module.css';
-import { TpropseTickets} from '../../../Types/Types';
+import { IpropseTickets} from '../../../Types/Types';
 import GlobalSvg from '../../../GlobalSvgCompany/GlobalSVG';
 
 
-function TicketsInfo({company, from, to, currency, price, startTime, endTime, duration, transfers }: TpropseTickets) {
+function TicketsInfo({company, from, to, currency, price, startTime, endTime, duration, transfers }: IpropseTickets) {
 
     let format = new Date(duration)
 
