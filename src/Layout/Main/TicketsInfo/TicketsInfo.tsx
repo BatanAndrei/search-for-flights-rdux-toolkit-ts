@@ -1,9 +1,9 @@
 import style from './ticketsInfo.module.css';
-import { TpropseTickets } from '../../../Types/Types';
+import { TpropseTickets} from '../../../Types/Types';
 import GlobalSvg from '../../../GlobalSvgCompany/GlobalSVG';
 
 
-function TicketsInfo({company, from, to, currency, price, startTime, endTime, duration, transfers}: any) {
+function TicketsInfo({company, from, to, currency, price, startTime, endTime, duration, transfers }: TpropseTickets) {
 
     let format = new Date(duration)
 
@@ -26,7 +26,7 @@ function TicketsInfo({company, from, to, currency, price, startTime, endTime, du
                 </div>
                 <div className={style.ticketInfoTransfers}>
                     <h2 className={style.infoTextTitle}>Пересадки</h2>
-                    <h3 className={style.infoTextData}>{transfers}</h3>
+                    <h3 className={style.infoTextData}>{transfers} пересадки</h3>
                 </div>
             </div>
         </div>

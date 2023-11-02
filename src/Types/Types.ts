@@ -14,16 +14,20 @@ export interface Iticket { // типы данных с серверв
     startTime: string;
     endTime: string;
     duration: number;
-    date: string;
-    transfers: number | null;
+    date?: string;
+    transfers: number;
 }
 
-export type TpropseTickets = {
+export interface Tcompany {
+    company: string;
+}
+
+export interface TpropseTickets {
     id: number;
     from: string;
     to: string;
-    company: string;
     price: number;
+    company: string;
     currency: string;
     startTime: string;
     endTime: string;

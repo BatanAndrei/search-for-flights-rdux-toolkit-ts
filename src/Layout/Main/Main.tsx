@@ -21,9 +21,7 @@ function Main() {
                     <ButtonsNavigation />
                 </div>
                 <div className={style.block_info__tickets}>
-                    {listTickets.map((ticket) => <TicketsInfo key={ticket.id} company={ticket.company} from={ticket.from} to={ticket.to} currency={ticket.currency} price={ticket.price} startTime={ticket.startTime} endTime={ticket.endTime} duration={ticket.duration} transfers={ticket.transfers} />)}
-                    {/* <TicketsInfo />
-                    <TicketsInfo /> */}
+                    {listTickets.map((ticket) => <TicketsInfo key={ticket.id} id={ticket.id} company={ticket.company} from={ticket.from} to={ticket.to} currency={ticket.currency} price={ticket.price} startTime={ticket.startTime} endTime={ticket.endTime} duration={ticket.duration} transfers={ticket.transfers} />)}
                 </div>
             </div>
         </main>

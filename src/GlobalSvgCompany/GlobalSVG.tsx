@@ -1,7 +1,9 @@
-import { TpropseTickets } from '../Types/Types';
+import { Tcompany } from '../Types/Types';
 import style from './globalSvg.module.css';
 
-const GlobalSvg = ({ company }: any) => {
+
+const GlobalSvg = ({ company }: Tcompany) => {
+
     switch (company) {
         case 'Pobeda':
             return (
