@@ -1,6 +1,6 @@
 import style from './ticketsInfo.module.css';
 import { IpropseTickets} from '../../../Types/Types';
-import GlobalSvg from '../../../GlobalSvgCompany/GlobalSVG';
+import GlobalSvg from '../../../GlobalLogoCompany/GlobalLogo';
 
 
 function TicketsInfo({company, from, to, currency, price, startTime, endTime, duration, transfers }: IpropseTickets) {

@@ -1,5 +1,6 @@
 import style from './buttonsNavigation.module.css';
 
+
 function ButtonsNavigation() {
    
     return (

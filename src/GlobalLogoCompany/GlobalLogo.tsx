@@ -1,5 +1,5 @@
 import { Tcompany } from '../Types/Types';
-import style from './globalSvg.module.css';
+import style from './globalLogo.module.css';
 
 
 const GlobalSvg = ({ company }: Tcompany) => {

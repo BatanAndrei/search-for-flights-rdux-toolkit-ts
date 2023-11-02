@@ -15,7 +15,8 @@ import{ RootState } from '../Api/Store';
     name: "tickets",
     initialState,
     reducers: {
-      //...
+     //...
+      
     },
   
     extraReducers: (builder) => {
@@ -30,7 +31,7 @@ import{ RootState } from '../Api/Store';
       builder
       .addCase(fetchTickets.fulfilled, 
         (state, { payload }) => {
-     
+  
         state.listTickets.push(...payload);
         state.status = "idle";
       });
@@ -49,3 +50,6 @@ import{ RootState } from '../Api/Store';
   export const selectStatus = (state: RootState) => state.ticketsExtraReducer.status; //статус в ticketsExtraReducer
   export const selectListTickets = (state: RootState) => state.ticketsExtraReducer.listTickets
 
+  
+    
+ 

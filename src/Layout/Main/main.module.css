@@ -3,7 +3,7 @@
     margin-top: 20.55px;
     margin-left: 276px;
     width: 1049px;
-    height: 700px;
+    max-height: 2700px;
     border-radius: 10px;
     border: 1px solid;
 }
@@ -16,7 +16,7 @@
 .block_info {
     margin-left: 50px;
     width: 727px;
-    height: 700px;
+    max-height: 2700px;
     border-radius: 10px;
 }
 
@@ -29,9 +29,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    row-gap: 45px;
     margin-top: 29px;
     width: 727px;
-    height: 616px;
+    min-height: 616px; 
+    max-height: 2616px;
     border-radius: 10px;
     border: 1px solid;
 }
