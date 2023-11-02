@@ -1,23 +1,23 @@
-.icon_pobeda {
+.pobeda {
     width: 160px;
     height: 51px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url('../../../svgIcon/pobeda.png');
-}
+    background-image: url('pngCompany/pobeda.png');
+} 
 
-.icon_redWings {
+.redwings {
     width: 183px;
     height: 51px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url('../../../svgIcon/redWings.png');
-}
+    background-image: url('pngCompany/redWings.png');
+} 
 
-.icon_sseven {
+.ssevenair {
     width: 143px;
     height: 51px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url('../../../svgIcon/s7.png');
+    background-image: url('pngCompany/s7.png');
 }

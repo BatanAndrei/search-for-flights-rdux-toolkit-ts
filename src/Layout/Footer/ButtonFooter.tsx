@@ -9,8 +9,8 @@ function Footer() {
     const dispatch = useAppDispatch();
 
     const status = useAppSelector(selectStatus);
-
-    const handleClick = () => dispatch(fetchTickets(5));
+    
+    const handleClick = () => dispatch(fetchTickets(3));
 
     return (
         <footer className={style.footer}>

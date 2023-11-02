@@ -18,8 +18,18 @@ export interface Iticket { // типы данных с серверв
     transfers: number | null;
 }
 
-export type Tpropse = {
-    icon: string
+export type TpropseTickets = {
+    id: number;
+    from: string;
+    to: string;
+    company: string;
+    price: number;
+    currency: string;
+    startTime: string;
+    endTime: string;
+    duration: number;
+    transfers: number;
+
 }
 
 export type TfetchTicketsError = {  // тип описывает структуру объекта ошибки запроса к серверу
@@ -27,7 +37,7 @@ export type TfetchTicketsError = {  // тип описывает структу�
   };
 
   export type TtikcetsState = { // типы для обработки запроса статусов к серверу
-    list: Iticket[];
+    listTickets: Iticket[];
     error: string | null;
     status: "loading" | "idle";
   };

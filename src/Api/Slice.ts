@@ -5,12 +5,12 @@ import{ RootState } from '../Api/Store';
 
 
   const initialState: TtikcetsState = { //дэфолтовое значение полей статусов запроса
-    list: [],
+    listTickets: [],
     error: null,
     status: "idle",
   };
 
-  
+
   export const ticketsSlice = createSlice({
     name: "tickets",
     initialState,
@@ -31,7 +31,7 @@ import{ RootState } from '../Api/Store';
       .addCase(fetchTickets.fulfilled, 
         (state, { payload }) => {
      
-        state.list.push(...payload);
+        state.listTickets.push(...payload);
         state.status = "idle";
       });
   
@@ -39,7 +39,7 @@ import{ RootState } from '../Api/Store';
       .addCase(fetchTickets.rejected, 
         (state, { payload }) => {
        
-        if (payload) state.error = payload.message;
+        if (payload) state.error = payload.message; //В payload.message приходит из fetchTickets => return thunkApi.rejectWithValue({ message: "Failed to fetch tickets." })
         state.status = "idle";
       });
     },
@@ -47,4 +47,5 @@ import{ RootState } from '../Api/Store';
 
 
   export const selectStatus = (state: RootState) => state.ticketsExtraReducer.status; //статус в ticketsExtraReducer
+  export const selectListTickets = (state: RootState) => state.ticketsExtraReducer.listTickets
 
