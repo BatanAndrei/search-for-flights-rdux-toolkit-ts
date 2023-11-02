@@ -5,7 +5,6 @@
     width: 1049px;
     max-height: 2700px;
     border-radius: 10px;
-    border: 1px solid;
 }
 
 .block_filters {
@@ -35,5 +34,4 @@
     min-height: 616px; 
     max-height: 2616px;
     border-radius: 10px;
-    border: 1px solid;
 }
