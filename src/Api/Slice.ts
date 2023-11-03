@@ -12,6 +12,7 @@ import{ RootState } from '../Api/Store';
     btnCheap: true,
     btnFast: true,
     btnOptimal: true,
+    count: 3,
   };
 
 
@@ -19,6 +20,11 @@ import{ RootState } from '../Api/Store';
     name: "tickets",
     initialState,
     reducers: {
+
+      countReducer: (state) => {
+        state.listTickets = [];
+        state.count +=1
+      },
 
       btnViewCheapReducer: (state) => {
         state.btnCheap = false;
@@ -68,11 +74,13 @@ import{ RootState } from '../Api/Store';
   export const selectStatus = (state: RootState) => state.ticketsExtraReducer.status; //статус в ticketsExtraReducer
   export const selectListTickets = (state: RootState) => state.ticketsExtraReducer.listTickets
 
-  export const { btnViewCheapReducer, btnViewFastReducer, btnViewOptimalReducer } = ticketsSlice.actions;
+  export const { btnViewCheapReducer, btnViewFastReducer, btnViewOptimalReducer, countReducer } = ticketsSlice.actions;
 
   export const selectStateBtnCheap= (state: RootState) => state.btnViewCheapReducer.btnCheap;
   export const selectStateBtnFast= (state: RootState) => state.btnViewFastReducer.btnFast;
   export const selectStateOptimal= (state: RootState) => state.btnViewOptimalReducer.btnOptimal;
+
+  export const selectStateCount= (state: RootState) => state.countReducer.count;
     
     
  

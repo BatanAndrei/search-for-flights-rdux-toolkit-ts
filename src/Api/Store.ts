@@ -9,6 +9,7 @@ export const store = configureStore({
         btnViewCheapReducer: ticketsSlice.reducer,
         btnViewFastReducer: ticketsSlice.reducer,
         btnViewOptimalReducer: ticketsSlice.reducer,
+        countReducer: ticketsSlice.reducer,
     }
 })
 

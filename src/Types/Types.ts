@@ -47,11 +47,6 @@ export type TfetchTicketsError = {  // тип описывает структу�
     btnCheap: Boolean;
     btnFast: Boolean;
     btnOptimal: Boolean;
+    count: number;
   };
 
-/*   export type TbtnState = {
-    btnCheap: Boolean,
-    btnFast: Boolean,
-    btnOptimal: Boolean,
-  }
- */
