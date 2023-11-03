@@ -12,7 +12,6 @@ export const fetchTickets = createAsyncThunk<Iticket[], number, { rejectValue: T
       const response = await fetch(`http://localhost:3000/tickets?_limit=${limit}`);
   
       const data: Iticket[] = await response.json();
-      //console.log(thunkApi.getState())
 
       if (response.status !== 200) {
         

@@ -21,8 +21,11 @@
 }
 
 .active {
-    color: red;
+    width: 242px;
+    height: 55px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #E8EBF2;
+    border: 1px solid #4E148C;
+    background-color: #4E148C;
 }
-/* .button_pressed {
-
-} */

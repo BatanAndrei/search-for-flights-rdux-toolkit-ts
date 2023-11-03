@@ -44,4 +44,14 @@ export type TfetchTicketsError = {  // тип описывает структу�
     listTickets: Iticket[];
     error: string | null;
     status: "loading" | "idle";
+    btnCheap: Boolean;
+    btnFast: Boolean;
+    btnOptimal: Boolean;
   };
+
+/*   export type TbtnState = {
+    btnCheap: Boolean,
+    btnFast: Boolean,
+    btnOptimal: Boolean,
+  }
+ */
