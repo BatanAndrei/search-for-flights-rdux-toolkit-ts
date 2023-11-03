@@ -47,6 +47,13 @@ export type TfetchTicketsError = {  // тип описывает структу�
     btnCheap: Boolean;
     btnFast: Boolean;
     btnOptimal: Boolean;
-    count: number;
+    paramsFetch: IparamsFetch
   };
+
+  export interface IparamsFetch {
+    limit: number;
+    companyP: string;
+    companyR: string;
+    companyS: string;
+  }
 

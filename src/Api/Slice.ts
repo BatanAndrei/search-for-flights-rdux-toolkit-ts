@@ -9,10 +9,16 @@ import{ RootState } from '../Api/Store';
     listTickets: [],
     error: null,
     status: "idle",
-    btnCheap: true,
+    btnCheap: false,
     btnFast: true,
     btnOptimal: true,
-    count: 3,
+    paramsFetch: {
+      limit: 3,
+      companyP: 'Pobeda',
+      companyR: 'Redwings',
+      companyS: 'Ssevenair',
+    }
+    
   };
 
 
@@ -23,7 +29,7 @@ import{ RootState } from '../Api/Store';
 
       countReducer: (state) => {
         state.listTickets = [];
-        state.count +=1
+        state.paramsFetch.limit +=1;
       },
 
       btnViewCheapReducer: (state) => {
@@ -80,7 +86,8 @@ import{ RootState } from '../Api/Store';
   export const selectStateBtnFast= (state: RootState) => state.btnViewFastReducer.btnFast;
   export const selectStateOptimal= (state: RootState) => state.btnViewOptimalReducer.btnOptimal;
 
-  export const selectStateCount= (state: RootState) => state.countReducer.count;
+  export const selectStatePrams= (state: RootState) => state.countReducer.paramsFetch;
+ 
     
     
  

@@ -7,17 +7,17 @@ import { useEffect } from 'react';
 import { useAppSelector, useAppDispatch } from '../../Api/Store';
 import { fetchTickets } from '../../Api/FetchTickets';
 import { selectListTickets } from '../../Api/Slice';
-import { selectStateCount } from '../../Api/Slice';
+import { selectStatePrams } from '../../Api/Slice';
 
 function Main() { 
 
-    const statusCount = useAppSelector(selectStateCount);
+    const stateParams = useAppSelector(selectStatePrams);
 
     const dispatch = useAppDispatch();
 
     useEffect(() => {
-        dispatch(fetchTickets(statusCount))
-    }, [statusCount])
+        dispatch(fetchTickets(stateParams))
+    }, [stateParams])
 
     const listTickets = useAppSelector(selectListTickets);
     console.log(listTickets)
