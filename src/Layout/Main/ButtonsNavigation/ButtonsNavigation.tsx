@@ -1,4 +1,4 @@
-import { btnViewCheap, btnViewFast, btnViewOptimal } from '../../../Api/Slice';
+import { btnViewCheapReducer, btnViewFastReducer, btnViewOptimalReducer } from '../../../Api/Slice';
 import { useAppSelector, useAppDispatch } from '../../../Api/Store'; 
 import { selectStateBtnCheap, selectStateBtnFast, selectStateOptimal } from '../../../Api/Slice';
 import style from './buttonsNavigation.module.css';
@@ -18,9 +18,9 @@ function ButtonsNavigation() {
 
     return (
         <>
-            <button onClick={() => dispatch(btnViewCheap())} className={cheap+ ' ' +style.cheap}>Самый дешевый</button>
-            <button onClick={() => dispatch(btnViewFast())} className={fast+ ' ' +style.fast}>Самый быстрый</button>
-            <button onClick={() => dispatch(btnViewOptimal())} className={optimal+ ' ' +style.optimal}>Самый оптимальный</button>
+            <button onClick={() => dispatch(btnViewCheapReducer())} className={cheap+ ' ' +style.cheap}>Самый дешевый</button>
+            <button onClick={() => dispatch(btnViewFastReducer())} className={fast+ ' ' +style.fast}>Самый быстрый</button>
+            <button onClick={() => dispatch(btnViewOptimalReducer())} className={optimal+ ' ' +style.optimal}>Самый оптимальный</button>
         </>
     )
 }

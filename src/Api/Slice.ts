@@ -19,18 +19,18 @@ import{ RootState } from '../Api/Store';
     name: "tickets",
     initialState,
     reducers: {
-      
-      btnViewCheap: (state) => {
+
+      btnViewCheapReducer: (state) => {
         state.btnCheap = false;
         state.btnFast = true;
         state.btnOptimal = true;
       },
-      btnViewFast: (state) => {
+      btnViewFastReducer: (state) => {
         state.btnCheap = true;
         state.btnFast = false;
         state.btnOptimal = true;
       },
-      btnViewOptimal: (state) => {
+      btnViewOptimalReducer: (state) => {
         state.btnCheap = true;
         state.btnFast = true;
         state.btnOptimal = false;
@@ -68,11 +68,11 @@ import{ RootState } from '../Api/Store';
   export const selectStatus = (state: RootState) => state.ticketsExtraReducer.status; //статус в ticketsExtraReducer
   export const selectListTickets = (state: RootState) => state.ticketsExtraReducer.listTickets
 
-  export const { btnViewCheap, btnViewFast, btnViewOptimal } = ticketsSlice.actions;
+  export const { btnViewCheapReducer, btnViewFastReducer, btnViewOptimalReducer } = ticketsSlice.actions;
 
-  export const selectStateBtnCheap= (state: RootState) => state.btnViewCheap.btnCheap;
-  export const selectStateBtnFast= (state: RootState) => state.btnViewFast.btnFast;
-  export const selectStateOptimal= (state: RootState) => state.btnViewOptimal.btnOptimal;
+  export const selectStateBtnCheap= (state: RootState) => state.btnViewCheapReducer.btnCheap;
+  export const selectStateBtnFast= (state: RootState) => state.btnViewFastReducer.btnFast;
+  export const selectStateOptimal= (state: RootState) => state.btnViewOptimalReducer.btnOptimal;
     
     
  

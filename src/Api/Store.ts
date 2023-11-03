@@ -6,9 +6,9 @@ import { ticketsSlice } from './Slice';
 export const store = configureStore({
     reducer: {
         ticketsExtraReducer: ticketsSlice.reducer, //в одном store описываем определённые slices определённого редуктора 
-        btnViewCheap: ticketsSlice.reducer,
-        btnViewFast: ticketsSlice.reducer,
-        btnViewOptimal: ticketsSlice.reducer,
+        btnViewCheapReducer: ticketsSlice.reducer,
+        btnViewFastReducer: ticketsSlice.reducer,
+        btnViewOptimalReducer: ticketsSlice.reducer,
     }
 })
 
