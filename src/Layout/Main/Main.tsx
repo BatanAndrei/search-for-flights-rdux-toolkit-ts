@@ -3,10 +3,19 @@ import ButtonsNavigation from './ButtonsNavigation/ButtonsNavigation';
 import BlockFilterTransfer from './BlockFilterTransfer/BlockFilterTransfer';
 import BlockFilterCompanies from './BlockFilterCompanies/BlockFilterCompanies';
 import TicketsInfo from './TicketsInfo/TicketsInfo';
-import { useAppSelector } from '../../Api/Store';
+import { useEffect } from 'react';
+import { useAppSelector, useAppDispatch } from '../../Api/Store';
+import { fetchTickets } from '../../Api/FetchTickets';
 import { selectListTickets } from '../../Api/Slice';
 
 function Main() {
+
+    const dispatch = useAppDispatch();
+
+    useEffect(() => {
+        dispatch(fetchTickets(3))
+     }, [])
+
     const listTickets = useAppSelector(selectListTickets);
     console.log(listTickets)
 
