@@ -1,5 +1,5 @@
 import style from './blockFilterTransfer.module.css';
-import { choiseTransZero, choiseTransOne, choiseTransTwo, choiseTransThree } from '../../../Api/Slice';
+import { checkedTransZero, checkedTransOne, checkedTransTwo, checkedTransThree } from '../../../Api/Slice';
 import { useAppDispatch, /* useAppSelector */ } from '../../../Api/Store';
 //import { selectStatePrams } from '../../../Api/Slice';
 
@@ -10,22 +10,22 @@ function BlockFilterTransfer() {
 
     const heandleTransZero = (e: React.ChangeEvent<HTMLInputElement>) => {
         if(e.target.checked === true){
-            dispatch(choiseTransZero());
+            dispatch(checkedTransZero());
         }
     }    
     const heandleTransOne = (e: React.ChangeEvent<HTMLInputElement>) => {
         if(e.target.checked === true){
-            dispatch(choiseTransOne());
+            dispatch(checkedTransOne());
         }
     }
     const heandleTransTwo = (e: React.ChangeEvent<HTMLInputElement>) => {
         if(e.target.checked === true){
-            dispatch(choiseTransTwo());
+            dispatch(checkedTransTwo());
         }
     }
     const heandleTransThree = (e: React.ChangeEvent<HTMLInputElement>) => {
         if(e.target.checked === true){
-            dispatch(choiseTransThree());
+            dispatch(checkedTransThree());
         }
     }
     

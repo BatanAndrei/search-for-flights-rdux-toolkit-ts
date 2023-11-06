@@ -17,9 +17,9 @@ const initialState: TtikcetsState = { //дэфолтовое значение п
         companyR: 'Redwings',
         companyS: 'Ssevenair',
         transfers0: 'Без пересадок',
-        transfers1: '1 пересадка',
-        transfers2: '2 пересадки',
-        transfers3: '3 пересадки',
+        transfers1: '',
+        transfers2: '',
+        transfers3: '',
     }
     
 };
@@ -30,33 +30,21 @@ export const ticketsSlice = createSlice({
     initialState,
     reducers: {
 
-    choiseTransZero: (state) => {
+    checkedTransZero: (state) => {
         state.listTickets = [];
-        state.paramsFetch.transfers0 = 'Без пересадок';
-        state.paramsFetch.transfers1 = '';
-        state.paramsFetch.transfers2 = '';
-        state.paramsFetch.transfers3 = '';
+        state.paramsFetch.transfers0 = 'Без пересадок'; 
     },
-    choiseTransOne: (state) => {
+    checkedTransOne: (state) => {
         state.listTickets = [];
         state.paramsFetch.transfers1 = '1 пересадка';
-        state.paramsFetch.transfers0 = ''
-        state.paramsFetch.transfers2 = '';
-        state.paramsFetch.transfers3 = '';
     },
-    choiseTransTwo: (state) => {
+    checkedTransTwo: (state) => {
         state.listTickets = [];
         state.paramsFetch.transfers2 = '2 пересадки';
-        state.paramsFetch.transfers1 = '';
-        state.paramsFetch.transfers0 = '';
-        state.paramsFetch.transfers3 = '';
     },
-    choiseTransThree: (state) => {
+    checkedTransThree: (state) => {
         state.listTickets = [];
         state.paramsFetch.transfers3 = '3 пересадки';
-        state.paramsFetch.transfers1 = '';
-        state.paramsFetch.transfers2 = '';
-        state.paramsFetch.transfers0 = '';
     },
 
     choisePobeda: (state) => {
@@ -133,8 +121,8 @@ export const ticketsSlice = createSlice({
     export const selectStatus = (state: RootState) => state.ticketsExtraReducer.status; //статус в ticketsExtraReducer
     export const selectListTickets = (state: RootState) => state.ticketsExtraReducer.listTickets
 
-    export const { btnViewCheapReducer, btnViewFastReducer, btnViewOptimalReducer, countReducer, choisePobeda, choiseRedWings, choiseSseven, choiseTransZero, choiseTransOne, choiseTransTwo, choiseTransThree } = ticketsSlice.actions;
-
+    export const { btnViewCheapReducer, btnViewFastReducer, btnViewOptimalReducer, countReducer, choisePobeda, choiseRedWings, choiseSseven, checkedTransZero, checkedTransOne, checkedTransTwo, checkedTransThree } = ticketsSlice.actions;
+    
     export const selectStateBtnCheap= (state: RootState) => state.btnViewCheapReducer.btnCheap;
     export const selectStateBtnFast= (state: RootState) => state.btnViewFastReducer.btnFast;
     export const selectStateOptimal= (state: RootState) => state.btnViewOptimalReducer.btnOptimal;
