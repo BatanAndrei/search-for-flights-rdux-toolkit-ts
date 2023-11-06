@@ -15,7 +15,7 @@ export interface Iticket { // типы данных с серверв
     endTime: string;
     duration: number;
     date?: string;
-    transfers: number;
+    transfers: string;
 }
 
 export type Tcompany = { // тип пропса в компоненте GlobalSvg
@@ -32,7 +32,7 @@ export interface IpropseTickets { // типы пропсов
     startTime: string;
     endTime: string;
     duration: number;
-    transfers: number;
+    transfers: string;
 
 }
 
@@ -55,9 +55,9 @@ export type TfetchTicketsError = {  // тип описывает структу�
     companyP: string;
     companyR: string;
     companyS: string;
-    transfers0: number; 
-    transfers1: number;
-    transfers2: number;
-    transfers3: number;
+    transfers0: string; 
+    transfers1: string;
+    transfers2: string;
+    transfers3: string;
   }
 

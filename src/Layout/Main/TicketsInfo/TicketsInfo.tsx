@@ -26,7 +26,7 @@ function TicketsInfo({company, from, to, currency, price, startTime, endTime, du
                 </div>
                 <div className={style.ticketInfoTransfers}>
                     <h2 className={style.infoTextTitle}>Пересадки</h2>
-                    <h3 className={style.infoTextData}>{transfers} пересадки</h3>
+                    <h3 className={style.infoTextData}>{transfers}</h3>
                 </div>
             </div>
         </div>

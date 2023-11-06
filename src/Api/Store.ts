@@ -13,6 +13,10 @@ export const store = configureStore({
         choisePobeda: ticketsSlice.reducer,
         choiseRedWings: ticketsSlice.reducer,
         choiseSseven: ticketsSlice.reducer,
+        choiseTransZero: ticketsSlice.reducer,
+        choiseTransOne: ticketsSlice.reducer,
+        choiseTransTwo: ticketsSlice.reducer,
+        choiseTransThree: ticketsSlice.reducer,
     }
 })
 
