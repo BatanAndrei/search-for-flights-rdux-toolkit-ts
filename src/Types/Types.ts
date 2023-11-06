@@ -55,5 +55,9 @@ export type TfetchTicketsError = {  // тип описывает структу�
     companyP: string;
     companyR: string;
     companyS: string;
+    transfers0: number; 
+    transfers1: number;
+    transfers2: number;
+    transfers3: number;
   }
 

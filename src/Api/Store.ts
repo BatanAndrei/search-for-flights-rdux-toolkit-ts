@@ -10,6 +10,9 @@ export const store = configureStore({
         btnViewFastReducer: ticketsSlice.reducer,
         btnViewOptimalReducer: ticketsSlice.reducer,
         countReducer: ticketsSlice.reducer,
+        choisePobeda: ticketsSlice.reducer,
+        choiseRedWings: ticketsSlice.reducer,
+        choiseSseven: ticketsSlice.reducer,
     }
 })
 

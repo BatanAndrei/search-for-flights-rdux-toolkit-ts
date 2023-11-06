@@ -1,6 +1,7 @@
 import style from './blockFilterTransfer.module.css';
 
 function BlockFilterTransfer() {
+
     return (
         <div className={style.blockFilterTransfer}>
             <h2 className={style.titleFilter}>Количество пересадок</h2>

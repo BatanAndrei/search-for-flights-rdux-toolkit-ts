@@ -7,20 +7,20 @@ import { Iticket, TfetchTicketsError, IparamsFetch } from '../Types/Types';
 //rejectValue полезен когда нужно вывести ошибки
 export const fetchTickets = createAsyncThunk<Iticket[], IparamsFetch, { rejectValue: TfetchTicketsError }>(
     "tickets/fetchTickets", 
-    async ({limit, companyP, companyR, companyS}: IparamsFetch, thunkApi) => { // объект thunkApi содержит функцию rejectWithValue
-
-      const response = await fetch(`http://localhost:3000/tickets?_limit=${limit}&company=${companyP}&company=${companyR}&company=${companyS}`);
+    async ({limit, companyP,companyR, companyS, transfers0, transfers1, transfers2, transfers3 }: IparamsFetch, thunkApi) => { // объект thunkApi содержит функцию rejectWithValue
+    
+      const response = await fetch(`http://localhost:3000/tickets?_limit=${limit}&company=${companyP}&company=${companyR}&company=${companyS}&transfers=${transfers0}&transfers=${transfers1}&transfers=${transfers2}&transfers=${transfers3}`);
   
       const data: Iticket[] = await response.json();
 
       if (response.status !== 200) {
         
-        return thunkApi.rejectWithValue({  //rejectWithValue проверяет и возвращает ошибку при не удачном запросе
+          return thunkApi.rejectWithValue({  //rejectWithValue проверяет и возвращает ошибку при не удачном запросе
           message: "Failed to fetch tickets." 
-        });
+          });
       }
 
-      return data; // возврвщвет данные при успешном запросе
+        return data; // возврвщвет данные при успешном запросе
     }
   );
   
