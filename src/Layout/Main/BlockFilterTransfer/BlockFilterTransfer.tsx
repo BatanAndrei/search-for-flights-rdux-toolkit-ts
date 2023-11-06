@@ -1,5 +1,5 @@
 import style from './blockFilterTransfer.module.css';
-import { checkedTransZero, checkedTransOne, checkedTransTwo, checkedTransThree } from '../../../Api/Slice';
+import { checkedTransZero, checkedTransOne, checkedTransTwo, checkedTransThree, uncheckedTransZero, uncheckedTransOne, uncheckedTransTwo, uncheckedTransThree } from '../../../Api/Slice';
 import { useAppDispatch, /* useAppSelector */ } from '../../../Api/Store';
 //import { selectStatePrams } from '../../../Api/Slice';
 
@@ -11,21 +11,29 @@ function BlockFilterTransfer() {
     const heandleTransZero = (e: React.ChangeEvent<HTMLInputElement>) => {
         if(e.target.checked === true){
             dispatch(checkedTransZero());
+        }else if(e.target.checked === false){
+            dispatch(uncheckedTransZero());
         }
     }    
     const heandleTransOne = (e: React.ChangeEvent<HTMLInputElement>) => {
         if(e.target.checked === true){
             dispatch(checkedTransOne());
+        }else if(e.target.checked === false){
+            dispatch(uncheckedTransOne());
         }
     }
     const heandleTransTwo = (e: React.ChangeEvent<HTMLInputElement>) => {
         if(e.target.checked === true){
             dispatch(checkedTransTwo());
+        }else if(e.target.checked === false){
+            dispatch(uncheckedTransTwo());
         }
     }
     const heandleTransThree = (e: React.ChangeEvent<HTMLInputElement>) => {
         if(e.target.checked === true){
             dispatch(checkedTransThree());
+        }else if(e.target.checked === false){
+            dispatch(uncheckedTransThree());
         }
     }
     

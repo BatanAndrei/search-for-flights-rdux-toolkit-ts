@@ -30,9 +30,29 @@ export const ticketsSlice = createSlice({
     initialState,
     reducers: {
 
+    uncheckedTransZero: (state) => {
+        state.listTickets = [];  
+        state.paramsFetch = {...state.paramsFetch, transfers0: ''}
+    },
+
+    uncheckedTransOne: (state) => {
+        state.listTickets = [];
+        state.paramsFetch = {...state.paramsFetch, transfers1: ''}
+    },
+
+    uncheckedTransTwo: (state) => {
+        state.listTickets = [];
+        state.paramsFetch = {...state.paramsFetch, transfers2: ''}
+    },
+
+    uncheckedTransThree: (state) => {
+        state.listTickets = [];
+        state.paramsFetch = {...state.paramsFetch, transfers3: ''}
+    },
+
     checkedTransZero: (state) => {
         state.listTickets = [];
-        state.paramsFetch.transfers0 = 'Без пересадок'; 
+        state.paramsFetch.transfers3 = 'Без пересадок'; 
     },
     checkedTransOne: (state) => {
         state.listTickets = [];
@@ -121,8 +141,8 @@ export const ticketsSlice = createSlice({
     export const selectStatus = (state: RootState) => state.ticketsExtraReducer.status; //статус в ticketsExtraReducer
     export const selectListTickets = (state: RootState) => state.ticketsExtraReducer.listTickets
 
-    export const { btnViewCheapReducer, btnViewFastReducer, btnViewOptimalReducer, countReducer, choisePobeda, choiseRedWings, choiseSseven, checkedTransZero, checkedTransOne, checkedTransTwo, checkedTransThree } = ticketsSlice.actions;
-    
+    export const { btnViewCheapReducer, btnViewFastReducer, btnViewOptimalReducer, countReducer, choisePobeda, choiseRedWings, choiseSseven, checkedTransZero, checkedTransOne, checkedTransTwo, checkedTransThree, uncheckedTransZero, uncheckedTransOne, uncheckedTransTwo, uncheckedTransThree } = ticketsSlice.actions;
+
     export const selectStateBtnCheap= (state: RootState) => state.btnViewCheapReducer.btnCheap;
     export const selectStateBtnFast= (state: RootState) => state.btnViewFastReducer.btnFast;
     export const selectStateOptimal= (state: RootState) => state.btnViewOptimalReducer.btnOptimal;

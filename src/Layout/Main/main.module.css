@@ -27,7 +27,6 @@
 .block_info__tickets {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     row-gap: 45px;
     margin-top: 29px;
     width: 727px;
