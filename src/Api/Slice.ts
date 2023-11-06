@@ -29,7 +29,7 @@ import{ RootState } from '../Api/Store';
 
       countReducer: (state) => {
         state.listTickets = [];
-        state.paramsFetch.limit +=1;
+        state.paramsFetch.limit += 1;
       },
 
       btnViewCheapReducer: (state) => {
@@ -60,7 +60,7 @@ import{ RootState } from '../Api/Store';
   
       builder
       .addCase(fetchTickets.fulfilled, 
-        (state, { payload }) => {
+        (state, { payload }) => { 
   
         state.listTickets.push(...payload);
         state.status = "idle";
