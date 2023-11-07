@@ -67,3 +67,45 @@
     font-size: 16px;
     color: #4E148C;
 }
+
+@media (max-width: 429px) {
+    .ticket {
+        width: 400px;
+        height: 174px;
+        border-radius: 10px;
+        background-color: #E8EBF2;
+    }
+
+    .ticketInfoBottom {
+        width: 400px;
+    }
+
+    .ticketInfoTop {
+        width: 400px;
+        padding: 0px 23px 0px 23px;
+    }
+
+    .ticketInfoPrice {
+        margin-top: 28px;
+    }
+
+    .ticketInfoTime {
+        margin-left: 23px;
+    }
+    
+    .infoTextTitle {
+        width: 90px;
+    }
+
+    .infoTextData {
+        width: 120px;
+    }
+
+    .ticketInfoDurationFlight {
+        margin-left: 0px;
+    }
+
+    .ticketInfoTransfers {
+        margin-left: 0px;
+    }
+}

@@ -56,3 +56,15 @@
 .checkbox:checked + .fake::before{
     opacity: 1;
 }
+
+@media (min-width: 430px) and (max-width: 768px) {
+    .blockFilterTransfer {
+        display: none;
+    }
+}
+
+@media (max-width: 429px) {
+    .blockFilterTransfer {
+        display: none;
+    }
+}

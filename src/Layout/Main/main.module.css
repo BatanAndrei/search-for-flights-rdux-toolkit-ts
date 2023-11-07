@@ -34,3 +34,42 @@
     max-height: 2616px;
     border-radius: 10px;
 }
+
+@media (min-width: 430px) and (max-width: 768px) {
+    .block_filters {
+        display: none;
+    }
+
+    .block_main {
+        margin-left: 0px;
+        width: 727px;
+    }
+
+    .block_info {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 429px) {
+    .block_filters {
+        display: none;
+    }
+
+    .block_main {
+        margin-left: 0px;
+        width: 400px;
+    }
+
+    .block_info {
+       
+        margin-left: 0px;
+    }
+
+    .block_info__navigation {
+        width: 400px;
+    }
+
+    .block_info__tickets {
+        width: 400px;
+    }
+}
