@@ -59,5 +59,7 @@ export type TfetchTicketsError = {  // тип описывает структу�
     transfers1: string;
     transfers2: string;
     transfers3: string;
+    sortPrice: string;
+    sortDuratuon: string;
   }
 

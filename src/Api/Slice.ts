@@ -20,6 +20,8 @@ const initialState: TtikcetsState = { //дэфолтовое значение п
         transfers1: '',
         transfers2: '',
         transfers3: '',
+        sortPrice: '',
+        sortDuratuon: '',
     }
     
 };
@@ -56,14 +58,17 @@ export const ticketsSlice = createSlice({
         state.paramsFetch.transfers3 = 'Без пересадок'; 
     },
     checkedTransOne: (state) => {
+        state.paramsFetch = {...state.paramsFetch, transfers0: ''}
         state.listTickets = [];
         state.paramsFetch.transfers1 = '1 пересадка';
     },
     checkedTransTwo: (state) => {
+        state.paramsFetch = {...state.paramsFetch, transfers0: ''}
         state.listTickets = [];
         state.paramsFetch.transfers2 = '2 пересадки';
     },
     checkedTransThree: (state) => {
+        state.paramsFetch = {...state.paramsFetch, transfers0: ''}
         state.listTickets = [];
         state.paramsFetch.transfers3 = '3 пересадки';
     },
@@ -98,16 +103,25 @@ export const ticketsSlice = createSlice({
         state.btnCheap = false;
         state.btnFast = true;
         state.btnOptimal = true;
+        state.listTickets = [];
+        state.paramsFetch.sortDuratuon = '';
+        state.paramsFetch.sortPrice = 'price'
     },
     btnViewFastReducer: (state) => {
         state.btnCheap = true;
         state.btnFast = false;
         state.btnOptimal = true;
+        state.listTickets = [];
+        state.paramsFetch.sortPrice = '';
+        state.paramsFetch.sortDuratuon = 'duration';
     },
     btnViewOptimalReducer: (state) => {
         state.btnCheap = true;
         state.btnFast = true;
         state.btnOptimal = false;
+        state.listTickets = [];
+        state.paramsFetch.sortPrice = 'price';
+        state.paramsFetch.sortDuratuon = 'duration';
     }
     },
 
