@@ -51,6 +51,7 @@ export const ticketsSlice = createSlice({
     },
 
     checkedTransZero: (state) => {
+        state.paramsFetch = {...state.paramsFetch, transfers0: ''}
         state.listTickets = [];
         state.paramsFetch.transfers3 = 'Без пересадок'; 
     },

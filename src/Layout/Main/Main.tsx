@@ -20,7 +20,6 @@ function Main() {
     }, [stateParams])
 
     const listTickets = useAppSelector(selectListTickets);
-    console.log(listTickets)
 
     return (
         <main className={style.block_main}>

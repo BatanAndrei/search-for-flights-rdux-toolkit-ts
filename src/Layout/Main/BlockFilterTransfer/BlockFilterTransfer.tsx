@@ -1,6 +1,6 @@
 import style from './blockFilterTransfer.module.css';
 import { checkedTransZero, checkedTransOne, checkedTransTwo, checkedTransThree, uncheckedTransZero, uncheckedTransOne, uncheckedTransTwo, uncheckedTransThree } from '../../../Api/Slice';
-import { useAppDispatch, /* useAppSelector */ } from '../../../Api/Store';
+import { useAppDispatch } from '../../../Api/Store';
 //import { selectStatePrams } from '../../../Api/Slice';
 
 function BlockFilterTransfer() {
@@ -37,7 +37,6 @@ function BlockFilterTransfer() {
         }
     }
     
-
     return (
         <div className={style.blockFilterTransfer}>
             <h2 className={style.titleFilter}>Количество пересадок</h2>
