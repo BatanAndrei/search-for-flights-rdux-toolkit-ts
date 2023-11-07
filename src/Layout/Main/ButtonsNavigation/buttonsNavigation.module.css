@@ -6,6 +6,7 @@
     color: #4E148C;
     border: 1px solid #4E148C;
     background-color: #E8EBF2;
+    cursor: pointer;
 }
 
 .optimal {
@@ -28,7 +29,9 @@
     color: #E8EBF2;
     border: 1px solid #4E148C;
     background-color: #4E148C;
+    cursor: pointer;
 }
+
 
 @media (max-width: 429px) {
     .button {
@@ -39,6 +42,7 @@
         color: #4E148C;
         border: 1px solid #4E148C;
         background-color: #E8EBF2;
+        cursor: pointer;
     }
 
     .active {
@@ -49,5 +53,6 @@
         color: #E8EBF2;
         border: 1px solid #4E148C;
         background-color: #4E148C;
+        cursor: pointer;
     }
 }

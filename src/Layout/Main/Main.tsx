@@ -3,6 +3,7 @@ import ButtonsNavigation from './ButtonsNavigation/ButtonsNavigation';
 import BlockFilterTransfer from './BlockFilterTransfer/BlockFilterTransfer';
 import BlockFilterCompanies from './BlockFilterCompanies/BlockFilterCompanies';
 import TicketsInfo from './TicketsInfo/TicketsInfo';
+import SvgArrowDown from '../../SvgLogo/svgArrowDown';
 import { useEffect } from 'react';
 import { useAppSelector, useAppDispatch } from '../../Api/Store';
 import { fetchTickets } from '../../Api/FetchTickets';
@@ -30,6 +31,11 @@ function Main() {
             <div className={style.block_info}>
                 <div className={style.block_info__navigation}>
                     <ButtonsNavigation />
+                </div>
+                <div className={style.menuApear}>
+                    <h2 className={style.menuApear_title}>Любая авиакомпания, любое кол-во пересадок</h2>
+                    <h2 className={style.menuApear_titleAction}>Открыть настройки</h2>
+                    <SvgArrowDown />
                 </div>
                 <div className={style.block_info__tickets}>
                     {listTickets.map((ticket) => <TicketsInfo key={ticket.id} {...ticket} /* id={ticket.id} company={ticket.company} from={ticket.from} to={ticket.to} currency={ticket.currency} price={ticket.price} startTime={ticket.startTime} endTime={ticket.endTime} duration={ticket.duration} transfers={ticket.transfers} */ />)}
