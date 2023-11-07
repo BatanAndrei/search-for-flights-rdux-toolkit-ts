@@ -53,22 +53,18 @@ export const ticketsSlice = createSlice({
     },
 
     checkedTransZero: (state) => {
-        state.paramsFetch = {...state.paramsFetch, transfers0: ''}
         state.listTickets = [];
         state.paramsFetch.transfers0 = 'Без пересадок'; 
     },
     checkedTransOne: (state) => {
-        state.paramsFetch = {...state.paramsFetch, transfers0: ''}
         state.listTickets = [];
         state.paramsFetch.transfers1 = '1 пересадка';
     },
     checkedTransTwo: (state) => {
-        state.paramsFetch = {...state.paramsFetch, transfers0: ''}
         state.listTickets = [];
         state.paramsFetch.transfers2 = '2 пересадки';
     },
     checkedTransThree: (state) => {
-        state.paramsFetch = {...state.paramsFetch, transfers0: ''}
         state.listTickets = [];
         state.paramsFetch.transfers3 = '3 пересадки';
     },
