@@ -1,13 +1,10 @@
 import style from './blockFilterTransfer.module.css';
 import { checkedTransZero, checkedTransOne, checkedTransTwo, checkedTransThree, uncheckedTransZero, uncheckedTransOne, uncheckedTransTwo, uncheckedTransThree } from '../../../Api/Slice';
-import { useAppDispatch, useAppSelector } from '../../../Api/Store';
-import { selectStateDisplayFilter } from '../../../Api/Slice';
+import { useAppDispatch } from '../../../Api/Store';
 
 
 function BlockFilterTransfer() {
 
-    const stateDisplayFilter = useAppSelector(selectStateDisplayFilter);
-    
     const dispatch = useAppDispatch();
 
     const heandleTransZero = (e: React.ChangeEvent<HTMLInputElement>) => {

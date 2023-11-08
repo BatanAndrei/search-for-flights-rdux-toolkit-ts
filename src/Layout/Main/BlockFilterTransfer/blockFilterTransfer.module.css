@@ -59,12 +59,54 @@
 
 @media (min-width: 430px) and (max-width: 768px) {
     .blockFilterTransfer {
-        display: none;
+        width: 527px;
+        height: 223px;
+        background-color: #4E148C;
+        border-radius: 0px 0px 10px 0px;
+    } 
+
+    .label {
+        margin: 8px 0px 0px 12px;
+        color: white;
+    }
+
+    .titleFilter {
+        color: white;
+    }
+
+    .fake{
+        background: #4E148C;
+        border: 1px solid white;
+    } 
+
+    .fake::before{
+        color: white;
     }
 }
 
 @media (max-width: 429px) {
-    .blockFilterTransfer {
-        display: none;
+   .blockFilterTransfer {
+    width: 200px;
+    height: 223px;
+    background-color: #4E148C;
+    border-radius: 0px 0px 10px 0px;
+    } 
+
+    .label {
+        margin: 8px 0px 0px 12px;
+        color: white;
+    }
+
+    .titleFilter {
+        color: white;
+    }
+
+    .fake{
+        background: #4E148C;
+        border: 1px solid white;
+    } 
+
+    .fake::before{
+        color: white;
     }
 }

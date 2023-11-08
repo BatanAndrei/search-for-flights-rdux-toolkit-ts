@@ -1,11 +1,8 @@
 import style from './blockFilterCompanies.module.css';
-import { useAppDispatch, useAppSelector } from '../../../Api/Store';
+import { useAppDispatch } from '../../../Api/Store';
 import { choiseRedWings, choisePobeda, choiseSseven } from '../../../Api/Slice';
-import { selectStateDisplayFilter } from '../../../Api/Slice';
 
 function BlockFilterCompanies() {
-
-    const stateDisplayFilter = useAppSelector(selectStateDisplayFilter);
 
     const dispatch = useAppDispatch();
     
