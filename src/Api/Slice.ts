@@ -22,7 +22,8 @@ const initialState: TtikcetsState = { //дэфолтовое значение п
         transfers3: '',
         sortPrice: '',
         sortDuratuon: '',
-    }
+    },
+    displayFilterMenu: false,
     
 };
 
@@ -32,24 +33,29 @@ export const ticketsSlice = createSlice({
     initialState,
     reducers: {
 
+    displyFilterMenu: (state) => {
+        state.displayFilterMenu = !state.displayFilterMenu;
+        
+    },
+
     uncheckedTransZero: (state) => {
         state.listTickets = [];  
-        state.paramsFetch = {...state.paramsFetch, transfers0: ''}
+        state.paramsFetch = {...state.paramsFetch, transfers0: ''};
     },
 
     uncheckedTransOne: (state) => {
         state.listTickets = [];
-        state.paramsFetch = {...state.paramsFetch, transfers1: ''}
+        state.paramsFetch = {...state.paramsFetch, transfers1: ''};
     },
 
     uncheckedTransTwo: (state) => {
         state.listTickets = [];
-        state.paramsFetch = {...state.paramsFetch, transfers2: ''}
+        state.paramsFetch = {...state.paramsFetch, transfers2: ''};
     },
 
     uncheckedTransThree: (state) => {
         state.listTickets = [];
-        state.paramsFetch = {...state.paramsFetch, transfers3: ''}
+        state.paramsFetch = {...state.paramsFetch, transfers3: ''};
     },
 
     checkedTransZero: (state) => {
@@ -101,7 +107,7 @@ export const ticketsSlice = createSlice({
         state.btnOptimal = true;
         state.listTickets = [];
         state.paramsFetch.sortDuratuon = '';
-        state.paramsFetch.sortPrice = 'price'
+        state.paramsFetch.sortPrice = 'price';
     },
     btnViewFastReducer: (state) => {
         state.btnCheap = true;
@@ -150,15 +156,18 @@ export const ticketsSlice = createSlice({
 
 
     export const selectStatus = (state: RootState) => state.ticketsExtraReducer.status; //статус в ticketsExtraReducer
-    export const selectListTickets = (state: RootState) => state.ticketsExtraReducer.listTickets
+    export const selectListTickets = (state: RootState) => state.ticketsExtraReducer.listTickets;
 
-    export const { btnViewCheapReducer, btnViewFastReducer, btnViewOptimalReducer, countReducer, choisePobeda, choiseRedWings, choiseSseven, checkedTransZero, checkedTransOne, checkedTransTwo, checkedTransThree, uncheckedTransZero, uncheckedTransOne, uncheckedTransTwo, uncheckedTransThree } = ticketsSlice.actions;
+    export const { btnViewCheapReducer, btnViewFastReducer, btnViewOptimalReducer, countReducer, choisePobeda, choiseRedWings, choiseSseven, checkedTransZero, checkedTransOne, checkedTransTwo, checkedTransThree, uncheckedTransZero, uncheckedTransOne, uncheckedTransTwo, uncheckedTransThree, displyFilterMenu } = ticketsSlice.actions;
 
     export const selectStateBtnCheap= (state: RootState) => state.btnViewCheapReducer.btnCheap;
     export const selectStateBtnFast= (state: RootState) => state.btnViewFastReducer.btnFast;
     export const selectStateOptimal= (state: RootState) => state.btnViewOptimalReducer.btnOptimal;
 
     export const selectStatePrams= (state: RootState) => state.countReducer.paramsFetch;
+
+    export const selectStateDisplayFilter= (state: RootState) => state.displyFilterMenu.displayFilterMenu;
+
 
     
     

@@ -47,7 +47,8 @@ export type TfetchTicketsError = {  // тип описывает структу�
     btnCheap: Boolean;
     btnFast: Boolean;
     btnOptimal: Boolean;
-    paramsFetch: IparamsFetch
+    paramsFetch: IparamsFetch;
+    displayFilterMenu: boolean;
   };
 
   export interface IparamsFetch {
@@ -62,4 +63,3 @@ export type TfetchTicketsError = {  // тип описывает структу�
     sortPrice: string;
     sortDuratuon: string;
   }
-

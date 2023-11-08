@@ -21,6 +21,7 @@ export const store = configureStore({
         uncheckedTransOne: ticketsSlice.reducer, 
         uncheckedTransTwo: ticketsSlice.reducer, 
         uncheckedTransThree: ticketsSlice.reducer,
+        displyFilterMenu: ticketsSlice.reducer,
     }
 })
 

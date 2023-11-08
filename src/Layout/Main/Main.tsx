@@ -13,7 +13,7 @@ import { selectStatePrams } from '../../Api/Slice';
 function Main() { 
 
     const stateParams = useAppSelector(selectStatePrams);
-
+    
     const dispatch = useAppDispatch();
 
     useEffect(() => {
